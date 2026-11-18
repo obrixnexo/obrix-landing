@@ -1,0 +1,45 @@
+OBRIX NEXO · LANDINGS (sitio de marketing)
+==========================================
+
+Dos landings separadas, cada una para un público y con un solo objetivo:
+
+  /            → Compradores (ferreterías, contratistas)   objetivo: "Ver saldos" / buscar
+  /empresas/   → Constructoras (socios)                    objetivo: "Agendar demo"
+  /privacidad/ → Política de privacidad (COMPLETAR los datos marcados antes de publicar)
+
+Versión 2 del diseño: mismos colores de marca, estilo más moderno e interactivo
+(buscador grande, categorías con íconos, carrusel, guías paso a paso, calculadora).
+
+Están separadas de la plataforma (obrix-web): las landings son marketing; la plataforma es la tienda y los paneles.
+Todas usan la misma API.
+
+Estructura
+----------
+  index.html                 landing de compradores
+  empresas/index.html        landing de constructoras
+  privacidad/index.html      política de privacidad
+  404.html                   página no encontrada
+  _headers, _redirects       seguridad, caché y redirecciones (Netlify)
+  robots.txt, sitemap.xml    para Google
+  favicon.svg
+  assets/css/base.css        marca, tipografía y componentes comunes
+  assets/css/compradores.css solo la landing de compradores
+  assets/css/empresas.css    solo la landing de constructoras
+  assets/js/config.js        direcciones de la API y de la plataforma  ← lo único que se cambia al mudar dominios
+  assets/js/lib/*.js         piezas comunes: API, validaciones (RUC, celular), formatos, menú,
+                             y ui.js (pestañas, carrusel, contadores y animaciones de entrada)
+  assets/js/compradores.js   saldos reales en el inicio y buscador
+  assets/js/empresas.js      formulario "Agendar demo" (llega a Obrix → Solicitudes)
+  assets/fonts/              tipografía Archivo (licencia libre OFL, incluida)
+  assets/img/                logo, íconos (icons.svg) e imágenes para compartir en redes (og-*.png)
+
+Probar en tu laptop
+-------------------
+1. API corriendo en IntelliJ y la plataforma con:  cd obrix-web  →  npx --yes http-server -p 5500 -c-1
+2. En otra terminal:  cd obrix-landing  →  npx --yes http-server -p 5600 -c-1
+3. Abre http://localhost:5600  y  http://localhost:5600/empresas/
+
+Publicar
+--------
+Netlify → Add new project → Deploy manually → arrastra ESTA carpeta (obrix-landing).
+Luego en Render agrega la dirección de la landing a CORS_ALLOWED_ORIGINS (separada por coma).

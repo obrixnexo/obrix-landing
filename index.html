@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Obrix Nexo · Material de obra nuevo a precio de saldo en Lima</title>
+  <meta name="description" content="Compra sanitarios, cables, porcelanato y más material de construcción nuevo que les sobró a constructoras de Lima. Revisado por Obrix, con fotos reales y precio final con IGV.">
+  <link rel="canonical" href="https://obrixnexo.com/">
+  <meta name="theme-color" content="#0f2a4a">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:site_name" content="Obrix Nexo">
+  <meta property="og:title" content="Material de obra nuevo, a precio de saldo">
+  <meta property="og:description" content="Saldos de constructoras de Lima, revisados por Obrix. Fotos reales y precio final con IGV.">
+  <meta property="og:url" content="https://obrixnexo.com/">
+  <meta property="og:image" content="https://obrixnexo.com/assets/img/og-compradores.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="/assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/compradores.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Obrix Nexo","url":"https://obrixnexo.com/","logo":"https://obrixnexo.com/favicon.svg","areaServed":"Lima, Perú","description":"Marketplace de saldos de obra: material de construcción nuevo que les sobró a constructoras."}
+  </script>
+  <script src="/assets/js/config.js"></script>
+  <script type="module" src="/assets/js/compradores.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__in">
+      <a class="brand" href="/" aria-label="Obrix Nexo, inicio"><img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">Obrix Nexo</a>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Abrir menú</span>
+        <svg class="i i-menu" aria-hidden="true"><use href="/assets/img/icons.svg#menu"/></svg>
+        <svg class="i i-close" aria-hidden="true"><use href="/assets/img/icons.svg#close"/></svg>
+      </button>
+      <nav class="nav__links" id="menu" aria-label="Principal">
+        <a href="#categorias">Categorías</a>
+        <a href="#saldos">Saldos</a>
+        <a href="#como-comprar">Cómo comprar</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="/empresas/">Soy constructora</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--primary btn--sm" data-app="#/saldos" href="#saldos">Ver saldos</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div class="hero__copy">
+          <p class="pill pill--live" data-live-pill><span class="pill__dot" aria-hidden="true"></span><span data-live-text>Saldos nuevos de obras en Lima</span></p>
+          <h1>Material de obra nuevo, a precio de saldo.</h1>
+          <p class="lead">Sanitarios, cables, porcelanato y más: lo que les sobró a constructoras de Lima, sin usar y revisado por Obrix. El precio que ves ya incluye IGV.</p>
+
+          <form class="search" data-search role="search" aria-label="Buscar material">
+            <label class="sr-only" for="q">¿Qué material buscas?</label>
+            <svg class="i search__icon" aria-hidden="true"><use href="/assets/img/icons.svg#search"/></svg>
+            <input class="search__input" id="q" name="q" type="search" placeholder="¿Qué buscas? Ej. inodoro, cable 14 AWG" autocomplete="off" enterkeyhint="search">
+            <button class="btn btn--primary" type="submit">Buscar</button>
+          </form>
+
+          <ul class="chips" role="list" aria-label="Lo más buscado">
+            <li><a class="chip" data-app="#/saldos?cat=1" href="#categorias"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-1"/></svg>Sanitarios</a></li>
+            <li><a class="chip" data-app="#/saldos?cat=2" href="#categorias"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-2"/></svg>Eléctricos</a></li>
+            <li><a class="chip" data-app="#/saldos?cat=5" href="#categorias"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-5"/></svg>Pisos</a></li>
+            <li><a class="chip" data-app="#/saldos?cat=7" href="#categorias"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-7"/></svg>Cemento</a></li>
+            <li><a class="chip" data-app="#/saldos?cat=10" href="#categorias"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-10"/></svg>Ferretería</a></li>
+          </ul>
+
+          <ul class="trust" role="list">
+            <li><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#check-circle"/></svg>Revisado por Obrix</li>
+            <li><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#check-circle"/></svg>Precio con IGV</li>
+            <li><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#check-circle"/></svg>Sin crear cuenta</li>
+          </ul>
+        </div>
+
+        <!-- Vitrina: saldos reales (los llena la API) -->
+        <div class="showcase" data-showcase aria-live="polite">
+          <div class="showcase__main sk-card" aria-hidden="true"><div class="sk-img"></div><div class="sk-lines"><span></span><span></span><span></span></div></div>
+          <div class="showcase__mini showcase__mini--a sk-card" aria-hidden="true"><div class="sk-img"></div></div>
+          <div class="showcase__mini showcase__mini--b sk-card" aria-hidden="true"><div class="sk-img"></div></div>
+          <p class="float-badge float-badge--a"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#shield"/></svg>Revisado por Obrix</p>
+          <p class="float-badge float-badge--b"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#clock"/></svg>Te lo separamos 48 h</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORÍAS ================= -->
+    <section class="section" id="categorias">
+      <div class="wrap">
+        <div class="head head--center">
+          <h2>¿Qué material necesitas?</h2>
+          <p class="lead">Elige una categoría y mira los saldos disponibles.</p>
+        </div>
+        <ul class="cats" role="list">
+          <li><a class="cat" data-app="#/saldos?cat=1" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-1"/></svg></span>Sanitarios y grifería</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=2" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-2"/></svg></span>Instalaciones eléctricas</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=3" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-3"/></svg></span>Herramientas eléctricas</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=4" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-4"/></svg></span>Discos, brocas y abrasivos</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=5" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-5"/></svg></span>Pisos y revestimientos</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=6" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-6"/></svg></span>Seguridad y EPP</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=7" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-7"/></svg></span>Cementos y albañilería</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=8" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-8"/></svg></span>Pinturas y acabados</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=9" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-9"/></svg></span>Impermeabilizantes</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=10" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-10"/></svg></span>Ferretería y fijaciones</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=11" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-11"/></svg></span>Herramientas manuales</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=12" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-12"/></svg></span>Escaleras y equipos</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=13" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-13"/></svg></span>Bombeo y agua</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=14" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-14"/></svg></span>Puertas y cerraduras</a></li>
+          <li><a class="cat" data-app="#/saldos?cat=15" href="#categorias"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-15"/></svg></span>Otros</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= RECIÉN PUBLICADOS ================= -->
+    <section class="section section--surface" id="saldos" data-latest hidden>
+      <div class="wrap carousel" data-carousel>
+        <div class="head head--row">
+          <div>
+            <h2>Recién publicados</h2>
+            <p class="lead">Disponibles hoy, con foto real y precio final.</p>
+          </div>
+          <div class="carousel__nav">
+            <button class="round-btn" type="button" data-prev aria-label="Anteriores"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#arrow-left"/></svg></button>
+            <button class="round-btn" type="button" data-next aria-label="Siguientes"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#arrow"/></svg></button>
+            <a class="btn btn--secondary btn--sm" data-app="#/saldos" href="#saldos">Ver todos</a>
+          </div>
+        </div>
+        <ul class="carousel__track" role="list" data-track data-latest-list></ul>
+      </div>
+    </section>
+
+    <!-- ================= CÓMO COMPRAR (interactivo) ================= -->
+    <section class="section" id="como-comprar">
+      <div class="wrap">
+        <div class="head head--center">
+          <h2>Comprar es así de simple</h2>
+          <p class="lead">Sin crear cuenta. Sigues tu pedido con un enlace privado.</p>
+        </div>
+
+        <div class="howto" data-tabs data-autoplay="5000">
+          <div class="howto__steps" role="tablist" aria-label="Pasos para comprar" aria-orientation="vertical">
+            <button class="howto__step" role="tab" id="t-elige" aria-controls="p-elige" aria-selected="true">
+              <span class="howto__n">1</span><span><b>Elige el material</b><small>Fotos reales, cantidad, estado y distrito de la obra.</small></span>
+            </button>
+            <button class="howto__step" role="tab" id="t-pide" aria-controls="p-pide" aria-selected="false" tabindex="-1">
+              <span class="howto__n">2</span><span><b>Haz tu pedido</b><small>Con tu RUC o DNI. Te lo separamos 48 horas.</small></span>
+            </button>
+            <button class="howto__step" role="tab" id="t-paga" aria-controls="p-paga" aria-selected="false" tabindex="-1">
+              <span class="howto__n">3</span><span><b>Paga a Obrix</b><small>Transferencia, depósito, Yape o Plin.</small></span>
+            </button>
+            <button class="howto__step" role="tab" id="t-recoge" aria-controls="p-recoge" aria-selected="false" tabindex="-1">
+              <span class="howto__n">4</span><span><b>Recoge o recibe</b><small>Con el pago verificado te damos la dirección.</small></span>
+            </button>
+          </div>
+
+          <div class="howto__stage">
+            <!-- 1 -->
+            <div class="mock" role="tabpanel" id="p-elige" aria-labelledby="t-elige">
+              <div class="mock__card">
+                <div class="mock__photo"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cat-1"/></svg><span class="mock__tag">Nuevo, sellado</span></div>
+                <div class="mock__body">
+                  <span class="code muted">OBX-7Q2LM</span>
+                  <b>Inodoro one piece blanco</b>
+                  <span class="muted"><svg class="i i--sm" aria-hidden="true"><use href="/assets/img/icons.svg#pin"/></svg>40 und · Santiago de Surco</span>
+                  <span class="mock__price">S/ 135.70 <small>por unidad, con IGV</small></span>
+                </div>
+              </div>
+              <p class="mock__caption">Cada saldo muestra fotos reales, cuánto queda y dónde está.</p>
+            </div>
+            <!-- 2 -->
+            <div class="mock" role="tabpanel" id="p-pide" aria-labelledby="t-pide" hidden>
+              <div class="mock__form">
+                <div class="mock__row"><span class="muted">Cantidad</span><span class="stepper"><span>−</span><b>5</b><span>+</span></span></div>
+                <div class="mock__field"><span class="muted">RUC o DNI</span><b class="code">20514585963</b></div>
+                <div class="mock__row mock__total"><span>Total con IGV</span><b>S/ 678.50</b></div>
+                <span class="badge badge--ok">Separado por 48 horas</span>
+              </div>
+              <p class="mock__caption">Pides en un minuto y la cantidad queda reservada para ti.</p>
+            </div>
+            <!-- 3 -->
+            <div class="mock" role="tabpanel" id="p-paga" aria-labelledby="t-paga" hidden>
+              <div class="mock__form">
+                <div class="pay"><span>Transferencia</span><span>Depósito</span><span class="is-on">Yape</span><span>Plin</span></div>
+                <div class="mock__field"><span class="muted">N.° de operación</span><b class="code">04839217</b></div>
+                <div class="mock__ok"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#check-circle"/></svg>Pago verificado por Obrix</div>
+              </div>
+              <p class="mock__caption">Pagas a la cuenta de Obrix, nunca a un desconocido.</p>
+            </div>
+            <!-- 4 -->
+            <div class="mock" role="tabpanel" id="p-recoge" aria-labelledby="t-recoge" hidden>
+              <div class="mock__map">
+                <span class="mock__pin"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#pin"/></svg></span>
+                <div class="mock__addr"><b>Obra Los Pinos</b><span class="muted">Santiago de Surco · Almacén: lun–sáb</span></div>
+              </div>
+              <p class="mock__caption">Con tu pago verificado te damos la dirección y el contacto, o coordinamos la entrega.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POR QUÉ OBRIX ================= -->
+    <section class="section section--surface">
+      <div class="wrap">
+        <div class="head head--center">
+          <h2>Compra con confianza</h2>
+          <p class="lead">Material nuevo que sobró en obra, con las garantías de una compra formal.</p>
+        </div>
+        <div class="bento">
+          <article class="card bento__big reveal">
+            <span class="icon-box"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#shield"/></svg></span>
+            <h3>Revisado antes de publicarse</h3>
+            <p class="muted">El equipo de Obrix verifica fotos, estado y precio de cada saldo antes de que lo veas en la tienda.</p>
+            <ul class="checks" role="list">
+              <li><svg class="i i--sm" aria-hidden="true"><use href="/assets/img/icons.svg#check"/></svg>Fotos reales del material</li>
+              <li><svg class="i i--sm" aria-hidden="true"><use href="/assets/img/icons.svg#check"/></svg>Estado indicado: nuevo, sellado o abierto</li>
+              <li><svg class="i i--sm" aria-hidden="true"><use href="/assets/img/icons.svg#check"/></svg>Precio revisado frente al mercado</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <span class="icon-box icon-box--navy"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#receipt"/></svg></span>
+            <h3>Precio final, con IGV</h3>
+            <p class="muted">Lo que ves es lo que pagas por el material.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon-box icon-box--navy"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#lock"/></svg></span>
+            <h3>Pago seguro</h3>
+            <p class="muted">Pagas a Obrix y recién con el pago verificado se libera el material.</p>
+          </article>
+          <article class="card bento__wide reveal">
+            <div>
+              <span class="icon-box icon-box--navy"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#cart"/></svg></span>
+              <h3>Pedido mínimo de <span class="hl" data-min-order>S/ 500.00</span> sin IGV</h3>
+              <p class="muted">Puedes juntar varios saldos de una misma obra en un solo pedido.</p>
+            </div>
+            <a class="btn btn--primary" data-app="#/saldos" href="#saldos">Empezar a comprar<svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PREGUNTAS ================= -->
+    <section class="section" id="preguntas">
+      <div class="wrap">
+        <div class="head head--center"><h2>Preguntas frecuentes</h2></div>
+        <div class="faq">
+          <details><summary>¿Necesito crear una cuenta?</summary><p>No. Haces tu pedido con tus datos y recibes un enlace privado para seguirlo, informar tu pago y ver la dirección de recojo.</p></details>
+          <details><summary>¿Cuánto tiempo me separan el material?</summary><p>48 horas desde que haces el pedido. Si en ese plazo no se registra tu pago, la reserva se libera sola.</p></details>
+          <details><summary>¿Cómo pago?</summary><p>Por transferencia, depósito, Yape o Plin a la cuenta de Obrix. Luego informas tu número de operación en el enlace de tu pedido y lo verificamos.</p></details>
+          <details><summary>¿El material está en buen estado?</summary><p>Son saldos nuevos que sobraron en obra. Cada uno indica su estado y tiene fotos reales, y Obrix lo revisa antes de publicarlo.</p></details>
+          <details><summary>¿Dónde recojo?</summary><p>En la obra de la constructora. Con tu pago verificado te damos la dirección exacta y el contacto del almacén. Si necesitas entrega, la coordinamos contigo.</p></details>
+          <details><summary>¿Hay un monto mínimo?</summary><p>Sí: el pedido mínimo es de <span data-min-order>S/ 500.00</span> sin IGV. Puedes combinar varios saldos de una misma obra.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PUENTE A CONSTRUCTORAS ================= -->
+    <section class="bridge-wrap">
+      <div class="wrap">
+        <div class="bridge on-navy reveal">
+          <div>
+            <h2>¿Tu constructora tiene material sobrante?</h2>
+            <p>Publícalo con aprobación de tu empresa y deja que Obrix lo venda, cobre y liquide.</p>
+          </div>
+          <a class="btn btn--primary btn--lg" href="/empresas/">Vender con Obrix<svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__about">
+          <a class="brand" href="/"><img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">Obrix Nexo</a>
+          <p>Material de obra nuevo, a precio de saldo. Saldos de constructoras de Lima, revisados por Obrix.</p>
+        </div>
+        <div class="footer__cols">
+          <nav aria-label="Compradores"><h2>Compradores</h2><ul><li><a data-app="#/saldos" href="#saldos">Ver saldos</a></li><li><a href="#categorias">Categorías</a></li><li><a href="#como-comprar">Cómo comprar</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li></ul></nav>
+          <nav aria-label="Constructoras"><h2>Constructoras</h2><ul><li><a href="/empresas/">Vender saldos</a></li><li><a href="/empresas/#demo">Agendar una demo</a></li><li><a data-app="#/ingresar" href="/empresas/">Ingresar al panel</a></li></ul></nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Obrix Nexo. Lima, Perú.</span>
+        <a href="/privacidad/">Política de privacidad</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
