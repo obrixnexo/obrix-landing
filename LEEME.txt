@@ -6,6 +6,8 @@ Dos landings separadas, cada una para un público y con un solo objetivo:
   /            → Compradores (ferreterías, contratistas)   objetivo: "Ver saldos" / buscar
   /empresas/   → Constructoras (socios)                    objetivo: "Agendar demo"
   /privacidad/ → Política de privacidad (COMPLETAR los datos marcados antes de publicar)
+  /terminos/   → Términos y condiciones (BORRADOR: revisar con el asesor legal y completar los datos marcados;
+                 si cambias el texto, cambia la versión aquí y en Render → variable TERMS_VERSION)
 
 Versión 2 del diseño: mismos colores de marca, estilo más moderno e interactivo
 (buscador grande, categorías con íconos, carrusel, guías paso a paso, calculadora).
@@ -18,6 +20,7 @@ Estructura
   index.html                 landing de compradores
   empresas/index.html        landing de constructoras
   privacidad/index.html      política de privacidad
+  terminos/index.html        términos y condiciones (los aceptan los perfiles al ingresar y los compradores al pedir)
   404.html                   página no encontrada
   _headers, _redirects       seguridad, caché y redirecciones (Netlify)
   robots.txt, sitemap.xml    para Google

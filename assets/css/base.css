@@ -280,6 +280,7 @@ a.card:hover, .card--hover:hover { transform: translateY(-4px); box-shadow: var(
 .footer a { text-decoration: none; transition: color .2s; }
 .footer a:hover { color: var(--white); }
 .footer__bottom { padding-top: 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+.footer__legal { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
 /* ---------- movimiento reducido ---------- */
 @media (prefers-reduced-motion: reduce) {
