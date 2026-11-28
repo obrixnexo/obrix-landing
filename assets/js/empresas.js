@@ -77,7 +77,7 @@ function showDone(form, data) {
   // textContent: lo que escribió la persona nunca se interpreta como HTML
   form.querySelector('[data-name]').textContent = data.contactName.split(/\s+/)[0];
   form.querySelector('[data-email]').textContent = data.email;
-  form.querySelector('[data-company]').textContent = data.companyName;
+  form.querySelector('[data-company]').textContent = data.companyName.replace(/\.+$/, '');   // "S.A.C." + punto final = "S.A.C.."
   form.querySelector('.demo__done').focus();
 }
 
